@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+  --inter: "'Inter', sans-serif";
+}
+li,a{
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-pos2{
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 53px;
+  height: 287px;  
+  border-radius: 20px 0px 0px 20px;
+  background: #F58A07;
+}
