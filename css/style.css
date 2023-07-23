@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap');
 
-:root{
+:root {
   --inter: "'Inter', sans-serif";
 }
-li,a{
+
+li,
+a {
   text-decoration: none;
   list-style: none;
 }
-body{
+
+body {
   font-family: 'Poppins', sans-serif;
 
 }
@@ -18,12 +21,20 @@ body{
   box-sizing: border-box;
 }
 
-.footer-pos2{
+.footer-pos2 {
   position: absolute;
   right: 0;
   top: 30px;
   width: 53px;
-  height: 287px;  
+  height: 287px;
   border-radius: 20px 0px 0px 20px;
   background: #F58A07;
+}
+
+
+
+
+
+.svg-inline--fa {
+  vertical-align: -0.2em !important;
 }

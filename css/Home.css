@@ -1,0 +1,58 @@
+.navbar-nav:hover  li{
+  filter: blur(5px);
+}
+.navbar-nav li:hover{
+  filter: blur(0);
+}
+
+.akFirst-pos{
+  position: absolute;
+  bottom: -20px;
+  left: 15%;
+  animation-name: mainTo;
+  animation-duration: 1s;
+
+
+}
+.akFirst2-pos{
+  position: absolute;
+  bottom: -140px;
+  right: 10%;
+  animation-name: mainTop;
+  animation-duration: 1s;
+}
+
+.akFirst-right{
+  background-image: url(../assets/akf1.png);
+  min-height: 618px;
+  background-position: center;
+}
+
+@keyframes mainTo {
+  0%{
+    transform: translateY(300px);
+    opacity: 0;
+  
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes mainTop {
+  0%{
+    transform: translateY(-400px);
+    opacity: 0;
+    z-index: 30;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.akImg{
+  transition: 0.2s linear;
+}
+.akImg:hover{
+  transform: scale(1.01);
+}
