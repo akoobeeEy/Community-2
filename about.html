@@ -10,9 +10,14 @@
         extend: {
           colors: {
             bodyColor: "#232536",
-            lightText: "#c4cfde",
+            gbText: "#0D1317",
+            smColor: "#5B5B5B",
             boxBg: "linear-gradient(145deg, #1e2024, #2327b)",
-            designColor: "#ff014f",
+            designColor: "#F58A07",
+          },
+          fontFamily:{
+            inter: "Inter,sans-serif",
+            poppins: "Poppins, sans-serif",
           },
         
           boxShadow: {
@@ -32,10 +37,19 @@
             @apply text-[#394149] text-base font-semibold
           }
           .button{
-            @apply rounded-3xl bg-orange-600 text-white py-4 px-12 hover:bg-orange-200 hover:text-[#F58A07] duration-150 delay-75
+            @apply rounded-3xl bg-orange-600 text-white py-4 px-12 hover:bg-orange-200 text-xs md:text-base hover:-translate-y-3 hover:text-[#F58A07] duration-150 delay-75
           }
           .footer-link{
-            @apply font-medium md:text-base text-sm text-gray-400 hover:text-white duration-100
+            @apply font-medium md:text-base text-xs text-gray-400 hover:text-white duration-100
+          }
+          .akHelp-title{
+            @apply text-[#0D1317] font-medium leading-4 text-base md:text-2xl
+          }
+          .akHelp-link{
+            @apply hover:text-[#F58A07] md:text-base text-sm font-normal duration-100
+          }
+          .akServisBtn{
+            @apply border-[1px] border-[#A8BCCC] text-[#A8BCCC] rounded-[30px] py-2 px-6 font-semibold md:text-base text-xs hover:border-white hover:bg-white hover:text-designColor hover:-translate-y-2 duration-100 delay-100
           }
         }
       </style>
@@ -45,13 +59,16 @@
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/Home.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Home</title>
+    <title>About</title>
   </head>
   <body>
+    <!-- Full screen modal -->
+
     <!-- Header start here -->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white sticky top-0 z-40  py-6">
+    <header class="sticky top-0 z-10 header">
+      <nav class="py-4 bg-white navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="./home.html"><img
               src="./assets/headerLogo.svg" alt></a>
@@ -68,7 +85,7 @@
                 data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav ms-auto items-center">
+              <ul class="items-center navbar-nav ms-auto">
                 <li class="nav-item">
                   <a class="nav-link " aria-current="page" href="./home.html">Home</a>
                 </li>
@@ -105,111 +122,166 @@
     <!-- Header end here -->
 
     <!-- Main start here -->
-    <main>
+ 
+      <!-- Main end here -->
 
-    </main>
-    <!-- Main end here -->
+      <!-- Footer start here -->
 
-    <!-- Footer start here -->
+      <footer class="py-14 bg-[#063255] relative">
+        <div class="footer-lr-position">
+          <div class="absolute bottom-0 left-0 footer-pos">
+            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="144"
+              viewBox="0 0 53 144" fill="none">
+              <path
+                d="M53 144L1.52588e-05 144L2.66991e-06 4.63341e-06L33 1.74846e-06C44.0457 7.8281e-07 53 8.9543 53 20L53 144Z"
+                fill="#F58A07" />
+            </svg>
+          </div>
+          <div class="footer-pos2">
 
-    <footer class="py-14 bg-[#063255] relative">
-       <div class="footer-lr-position">
-        <div class="footer-pos absolute bottom-0 left-0">
-          <svg xmlns="http://www.w3.org/2000/svg" width="53" height="144" viewBox="0 0 53 144" fill="none">
-            <path d="M53 144L1.52588e-05 144L2.66991e-06 4.63341e-06L33 1.74846e-06C44.0457 7.8281e-07 53 8.9543 53 20L53 144Z" fill="#F58A07"/>
-          </svg>
+          </div>
         </div>
-        <div class="footer-pos2">
+        <div class="container footer-content">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="flex justify-between footer-item ">
+                <div class="flex flex-col gap-3">
+                  <a href="./home.html" class>
+                    <img src="./assets/footLogo.png" alt class="img-fluid">
+                  </a>
+                  <h3
+                    class="flex flex-col text-base font-semibold text-white md:text-4xl">Bespoke
+                    software <span>solutions</span></h3>
+                  <div class="flex items-center h-full gap-3 py-2">
+                    <a class="cursor-pointer" href="#!">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                        height="20"
+                        viewBox="0 0 22 20" fill="none">
+                        <path
+                          d="M16.0068 1.66675H13.339C12.1597 1.66675 11.0287 2.10573 10.1948 2.88714C9.36096 3.66854 8.89249 4.72835 8.89249 5.83342V8.33342H6.22461V11.6667H8.89249V18.3334H12.4497V11.6667H15.1176L16.0068 8.33342H12.4497V5.83342C12.4497 5.6124 12.5434 5.40044 12.7101 5.24416C12.8769 5.08788 13.1031 5.00008 13.339 5.00008H16.0068V1.66675Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                    <a class="cursor-pointer" href="#!">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                        height="20"
+                        viewBox="0 0 22 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M19.6396 4.29942C19.9425 4.59206 20.1577 4.95443 20.2633 5.34992C20.5454 6.8155 20.6824 8.30238 20.6724 9.79158C20.678 11.2585 20.5411 12.7229 20.2633 14.1666C20.1577 14.5621 19.9425 14.9244 19.6396 15.2171C19.3367 15.5097 18.9567 15.7223 18.5381 15.8333C17.0085 16.2166 10.8902 16.2166 10.8902 16.2166C10.8902 16.2166 4.77182 16.2166 3.24224 15.8333C2.83211 15.7281 2.45786 15.5256 2.15565 15.2453C1.85343 14.965 1.63347 14.6165 1.51701 14.2333C1.23489 12.7677 1.09795 11.2808 1.10793 9.79158C1.10014 8.31351 1.23707 6.83788 1.51701 5.38325C1.62264 4.98776 1.83779 4.6254 2.14071 4.33276C2.44363 4.04012 2.8236 3.82757 3.24224 3.71659C4.77182 3.33325 10.8902 3.33325 10.8902 3.33325C10.8902 3.33325 17.0085 3.33325 18.5381 3.68325C18.9567 3.79424 19.3367 4.00679 19.6396 4.29942ZM14.0031 9.79161L8.88962 12.5166V7.06661L14.0031 9.79161Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                    <a class="cursor-pointer" href="#!">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                        height="20"
+                        viewBox="0 0 22 20" fill="none">
+                        <g clip-path="url(#clip0_1_1019)">
+                          <path
+                            d="M15.5562 1.66675H6.66327C4.20755 1.66675 2.2168 3.53223 2.2168 5.83342V14.1667C2.2168 16.4679 4.20755 18.3334 6.66327 18.3334H15.5562C18.0119 18.3334 20.0027 16.4679 20.0027 14.1667V5.83342C20.0027 3.53223 18.0119 1.66675 15.5562 1.66675Z"
+                            stroke="white" stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path
+                            d="M14.6667 9.47501C14.7765 10.1685 14.65 10.8769 14.3054 11.4992C13.9608 12.1215 13.4156 12.6262 12.7473 12.9414C12.079 13.2566 11.3216 13.3663 10.5829 13.2549C9.84417 13.1436 9.16176 12.8167 8.6327 12.321C8.10364 11.8252 7.75487 11.1857 7.636 10.4935C7.51713 9.8013 7.63422 9.09158 7.97061 8.46532C8.30699 7.83905 8.84555 7.32812 9.50967 7.00521C10.1738 6.68229 10.9297 6.56383 11.6698 6.66667C12.4247 6.77158 13.1236 7.10123 13.6633 7.60693C14.203 8.11263 14.5548 8.76757 14.6667 9.47501Z"
+                            stroke="white" stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M16.001 5.41675H16.0106" stroke="white"
+                            stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clippath id="clip0_1_1019">
+                            <rect width="21.3431" height="20" fill="white"
+                              transform="translate(0.438477)" />
+                          </clippath>
+                        </defs>
+                      </svg>
+                    </a>
+                    <a class="cursor-pointer" href="#!">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                        height="20"
+                        viewBox="0 0 22 20" fill="none">
+                        <path
+                          d="M21.1114 2.50008C20.2598 3.06298 19.3169 3.4935 18.319 3.77508C17.7834 3.198 17.0716 2.78899 16.2798 2.60335C15.4881 2.41771 14.6546 2.46441 13.8921 2.73712C13.1296 3.00984 12.4749 3.49541 12.0165 4.12818C11.5581 4.76094 11.3182 5.51036 11.3291 6.27508V7.10841C9.7663 7.14639 8.21772 6.82159 6.82129 6.16295C5.42486 5.50431 4.22393 4.53228 3.32546 3.33341C3.32546 3.33341 -0.231714 10.8334 7.77194 14.1667C5.94046 15.3317 3.75869 15.9159 1.54688 15.8334C9.55052 20.0001 19.3328 15.8334 19.3328 6.25008C19.3319 6.01796 19.3081 5.78641 19.2616 5.55841C20.1692 4.71966 20.8097 3.66067 21.1114 2.50008Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </div>
 
-        </div>
-       </div>
-       <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-12">
-            <div class="flex flex-col gap-3">
-                <a href="./home.html" class="">
-                <img src="./assets/footLogo.png" alt="" class="img-fluid">
-                </a>
-                <h3 class="flex flex-col font-semibold text-xl md:text-4xl leading-[44px] text-white">Bespoke software <span>solutions</span></h3>
-                <div class="flex gap-3 items-center h-full py-2">
-                  <a class="cursor-pointer" href="#!">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
-                      <path d="M16.0068 1.66675H13.339C12.1597 1.66675 11.0287 2.10573 10.1948 2.88714C9.36096 3.66854 8.89249 4.72835 8.89249 5.83342V8.33342H6.22461V11.6667H8.89249V18.3334H12.4497V11.6667H15.1176L16.0068 8.33342H12.4497V5.83342C12.4497 5.6124 12.5434 5.40044 12.7101 5.24416C12.8769 5.08788 13.1031 5.00008 13.339 5.00008H16.0068V1.66675Z" fill="white"/>
-                    </svg>
-                  </a>
-                  <a class="cursor-pointer" href="#!">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6396 4.29942C19.9425 4.59206 20.1577 4.95443 20.2633 5.34992C20.5454 6.8155 20.6824 8.30238 20.6724 9.79158C20.678 11.2585 20.5411 12.7229 20.2633 14.1666C20.1577 14.5621 19.9425 14.9244 19.6396 15.2171C19.3367 15.5097 18.9567 15.7223 18.5381 15.8333C17.0085 16.2166 10.8902 16.2166 10.8902 16.2166C10.8902 16.2166 4.77182 16.2166 3.24224 15.8333C2.83211 15.7281 2.45786 15.5256 2.15565 15.2453C1.85343 14.965 1.63347 14.6165 1.51701 14.2333C1.23489 12.7677 1.09795 11.2808 1.10793 9.79158C1.10014 8.31351 1.23707 6.83788 1.51701 5.38325C1.62264 4.98776 1.83779 4.6254 2.14071 4.33276C2.44363 4.04012 2.8236 3.82757 3.24224 3.71659C4.77182 3.33325 10.8902 3.33325 10.8902 3.33325C10.8902 3.33325 17.0085 3.33325 18.5381 3.68325C18.9567 3.79424 19.3367 4.00679 19.6396 4.29942ZM14.0031 9.79161L8.88962 12.5166V7.06661L14.0031 9.79161Z" fill="white"/>
-                    </svg>
-                  </a>
-                  <a class="cursor-pointer" href="#!">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
-                      <g clip-path="url(#clip0_1_1019)">
-                        <path d="M15.5562 1.66675H6.66327C4.20755 1.66675 2.2168 3.53223 2.2168 5.83342V14.1667C2.2168 16.4679 4.20755 18.3334 6.66327 18.3334H15.5562C18.0119 18.3334 20.0027 16.4679 20.0027 14.1667V5.83342C20.0027 3.53223 18.0119 1.66675 15.5562 1.66675Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M14.6667 9.47501C14.7765 10.1685 14.65 10.8769 14.3054 11.4992C13.9608 12.1215 13.4156 12.6262 12.7473 12.9414C12.079 13.2566 11.3216 13.3663 10.5829 13.2549C9.84417 13.1436 9.16176 12.8167 8.6327 12.321C8.10364 11.8252 7.75487 11.1857 7.636 10.4935C7.51713 9.8013 7.63422 9.09158 7.97061 8.46532C8.30699 7.83905 8.84555 7.32812 9.50967 7.00521C10.1738 6.68229 10.9297 6.56383 11.6698 6.66667C12.4247 6.77158 13.1236 7.10123 13.6633 7.60693C14.203 8.11263 14.5548 8.76757 14.6667 9.47501Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M16.001 5.41675H16.0106" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1_1019">
-                          <rect width="21.3431" height="20" fill="white" transform="translate(0.438477)"/>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                  <a class="cursor-pointer" href="#!">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
-                      <path d="M21.1114 2.50008C20.2598 3.06298 19.3169 3.4935 18.319 3.77508C17.7834 3.198 17.0716 2.78899 16.2798 2.60335C15.4881 2.41771 14.6546 2.46441 13.8921 2.73712C13.1296 3.00984 12.4749 3.49541 12.0165 4.12818C11.5581 4.76094 11.3182 5.51036 11.3291 6.27508V7.10841C9.7663 7.14639 8.21772 6.82159 6.82129 6.16295C5.42486 5.50431 4.22393 4.53228 3.32546 3.33341C3.32546 3.33341 -0.231714 10.8334 7.77194 14.1667C5.94046 15.3317 3.75869 15.9159 1.54688 15.8334C9.55052 20.0001 19.3328 15.8334 19.3328 6.25008C19.3319 6.01796 19.3081 5.78641 19.2616 5.55841C20.1692 4.71966 20.8097 3.66067 21.1114 2.50008Z" fill="white"/>
-                    </svg>
-                  </a>
                 </div>
-                <p class="mt-10 font-medium text-sm md:text-base text-white">© All rights reserved – Finsweet</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-12">
-              <div class="">
-                  <h5 class="font-semibold text-xl text-white mb-3">Company</h5>
-                  <ul class="flex flex-col gap-1">
-                      <li><a href="./about.html" class="footer-link">About Us</a></li>
-                      <li><a href="./carrer-inner.html" class="footer-link">Careers</a></li>
-                      <li><a href="./servis.html" class="footer-link">Services</a></li>
-                      <li><a href="./blog-inner.html" class="footer-link">Blog</a></li>
-                  </ul>
+
               </div>
-          </div>
-          <div class="col-lg-3 col-12">
-            <div class="">
-                <h5 class="font-semibold text-xl text-white mb-3">Company</h5>
+            </div>
+            <div
+              class="flex justify-normal lg:justify-center col-lg-3 col-md-6 col-12">
+              <div class="footer-item">
+                <h5 class="mb-3 text-sm font-semibold text-white md:text-xl">Company</h5>
                 <ul class="flex flex-col gap-1">
-                    <li><a href="email:hi@finsweet.com" class="footer-link">hi@finsweet.com</a></li>
-                    <li><a href="tel:+(123) 456-7890" class="footer-link">+(123) 456-7890</a></li>
-                  
+                  <li><a href="./about.html" class="footer-link">About Us</a></li>
+                  <li><a href="./carrer-inner.html" class="footer-link">Careers</a></li>
+                  <li><a href="./servis.html" class="footer-link">Services</a></li>
+                  <li><a href="./blog-inner.html" class="footer-link">Blog</a></li>
                 </ul>
-            </div>
-        </div>
-        <div class="col-lg-3 col-12">
-            <div class="">
-              <h5 class="font-semibold text-xl text-white mb-3">Company</h5>
-              <div class="flex flex-col gap-2">
-                  <input type="text" class="footer-input outline-none border-none rounded-2xl py-3 px-6" placeholder="Type email here">
-                  <button class="button w-1/2">Subscribe</button>
               </div>
-              
-              <ul class="mt-14 flex gap-2">
-                <li><a href="./policy.html" class="footer-link">Privacy Policy</a></li>
-                <li><a href="#!" class="footer-link">Terms & Conditions</a></li>
-              </ul>
             </div>
-        </div>
-        </div>
-       </div>
-    </footer>
+            <div class=" col-lg-3 col-md-6 col-12">
 
-    <!-- Footer end here -->
+              <div class="footer-item">
+                <h5 class="mb-3 text-sm font-semibold text-white md:text-xl">Connect</h5>
+                <ul class="flex flex-col gap-1">
+                  <li><a href="email:hi@finsweet.com" class="footer-link">hi@finsweet.com</a></li>
+                  <li><a href="tel:+(123) 456-7890" class="footer-link">+(123)
+                      456-7890</a></li>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
-  </body>
-</html>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="footer-item">
+                <h5 class="mb-3 text-sm font-semibold text-white md:text-xl">Join
+                  Newsletter</h5>
+                <div class="flex flex-col gap-2">
+                  <div class>
+                    <input type="text"
+                      class="px-4 py-3 text-xs border-none outline-none lg:px-6 md:text-xl footer-input rounded-2xl"
+                      placeholder="Type email here">
+                  </div>
+                  <div class="mt-3">
+                    <button class="button">Subscribe</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between footer-bottom mt-14">
+            <div class>
+              <p class="text-xs font-medium text-white md:text-base">©
+                All
+                rights reserved – Finsweet</p>
+            </div>
+
+            <ul class="flex gap-2 mt-3 lg:mt-0">
+              <li><a href="./policy.html" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#!" class="footer-link">Terms & Conditions</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </footer>
+
+      <!-- Footer end here -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+      <script src="./js/constants.js"></script>
+      <script src="./js/main.js"></script>
+    </body>
+  </html>
