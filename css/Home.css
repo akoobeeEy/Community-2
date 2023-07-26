@@ -1,9 +1,3 @@
-.navbar-nav:hover  li{
-  filter: blur(5px);
-}
-.navbar-nav li:hover{
-  filter: blur(0);
-}
 
 .akFirst-pos{
   position: absolute;
