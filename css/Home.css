@@ -56,3 +56,68 @@
 .akImg:hover{
   transform: scale(1.01);
 }
+
+.akAbout-right{
+  background-image: url(../assets/akAbout.png);
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.akAbout-right div{
+  mix-blend-mode: multiply;
+}
+.akAbout-circle{
+  position: absolute;
+  top: -42px;
+  z-index: 58;
+  right: -50px;
+}
+.akServis__right{
+  background-image: url(../assets/akServisImg.png);
+  min-height: 466px;
+  width: 472px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.akServis__right div{
+  mix-blend-mode: multiply;
+}
+
+.akVideo__right{
+  background-image: url(../assets/akVideoRightImg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  height: 501px;
+  background-position: center;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+.akLatestImg{
+  border-radius: 20px;
+}
+@media(max-width: 992px) {
+  .akLatest-item{
+    border-radius: 38px !important;
+  }
+  .akServis__right{
+   display: block;
+   margin: 0 auto;
+   margin-top: 30px;
+  }
+}
+@media(max-width: 768px) {
+  .akAbout-circle {
+    right: -10px;
+  }
+  .akFirst-pos{
+    display: none;
+  }
+  .akFirst2-pos{
+    display: none;
+  }
+}

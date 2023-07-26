@@ -38,3 +38,25 @@ body {
 .svg-inline--fa {
   vertical-align: -0.2em !important;
 }
+
+@media (max-width:1234px){
+  .footer-content{
+    padding: 0 40px;
+  }
+  .footer-bottom{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 972px){
+ 
+  .footer-item{
+    margin-top: 30px;
+  }
+}
+@media (max-width: 672px){
+ 
+  .footer-pos{
+    display: none;
+  }
+}
