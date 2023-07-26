@@ -10,9 +10,14 @@
         extend: {
           colors: {
             bodyColor: "#232536",
-            lightText: "#c4cfde",
+            gbText: "#0D1317",
+            smColor: "#5B5B5B",
             boxBg: "linear-gradient(145deg, #1e2024, #2327b)",
-            designColor: "#ff014f",
+            designColor: "#F58A07",
+          },
+          fontFamily:{
+            inter: "Inter,sans-serif",
+            poppins: "Poppins, sans-serif",
           },
         
           boxShadow: {
@@ -32,16 +37,19 @@
             @apply text-[#394149] text-base font-semibold
           }
           .button{
-            @apply rounded-3xl bg-orange-600 text-white py-4 px-12 hover:bg-orange-200 hover:-translate-y-3 hover:text-[#F58A07] duration-150 delay-75
+            @apply rounded-3xl bg-orange-600 text-white py-4 px-12 hover:bg-orange-200 text-xs md:text-base hover:-translate-y-3 hover:text-[#F58A07] duration-150 delay-75
           }
           .footer-link{
-            @apply font-medium md:text-base text-sm text-gray-400 hover:text-white duration-100
+            @apply font-medium md:text-base text-xs text-gray-400 hover:text-white duration-100
           }
           .akHelp-title{
             @apply text-[#0D1317] font-medium leading-4 text-base md:text-2xl
           }
           .akHelp-link{
-            @apply hover:text-[#F58A07] md:text-base text-sm font-normal
+            @apply hover:text-[#F58A07] md:text-base text-sm font-normal duration-100
+          }
+          .akServisBtn{
+            @apply border-[1px] border-[#A8BCCC] text-[#A8BCCC] rounded-[30px] py-2 px-6 font-semibold md:text-base text-xs hover:border-white hover:bg-white hover:text-designColor hover:-translate-y-2 duration-100 delay-100
           }
         }
       </style>
@@ -115,7 +123,7 @@
 
     <!-- Main start here -->
     <main class="main">
-   
+
       <section class="akFirstly bg-[#DCEAF5]">
         <div class="container">
           <div class="row">
@@ -135,7 +143,7 @@
                 <div class="flex flex-col gap-4 mt-5">
                   <h5 class="font-normal md:text-[18px] text-slate-400">Worked
                     with 100+ Companies</h5>
-                  <div class="flex items-center gap-5 mt-3">
+                  <div class="flex flex-wrap items-center gap-5 mt-3">
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="143"
                         height="33" viewBox="0 0 143 33" fill="none">
@@ -245,54 +253,416 @@
             </div>
             <div class="mt-5 row">
               <div class="col-lg-4">
-       
 
-                <div class="flex flex-col w-full bg-white rounded-[20px] akSecond-item">
+                <div
+                  class="flex flex-col w-full bg-white rounded-[20px] akSecond-item">
+
+                  <img src="./assets/akSec1.png" alt class="akImg">
+                  <div class="py-4 ">
+                    <div class="flex flex-col gap-2">
+                      <h4 class="akHelp-title">Business strategy</h4>
+                      <p class="text-sm font-medium md:text-base text-[#5B5B5B]">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur sit amet eros blandit, hendrerit elit et, </p>
+                      <a href="#!"
+                        class="flex items-center gap-2 akHelp-link w-fit">Learn
+                        More
+                        <span class=" text-[18px] font-normal"><i
+                            class="fa-solid fa-arrow-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="flex flex-col w-full">
+                  <img src="./assets/akSec2.png" alt class="akImg">
+                  <div class="py-4 bg-white rounded-[20px] akSecond-item">
+                    <div class="flex flex-col gap-2">
+                      <h4 class="akHelp-title">Digitalization</h4>
+                      <p class="text-sm font-medium md:text-base text-[#5B5B5B]">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur sit amet eros blandit, hendrerit elit et, </p>
+                      <a href="#!"
+                        class="flex items-center gap-2 akHelp-link w-fit">Learn
+                        More
+                        <span class=" text-[18px] font-normal"><i
+                            class="fa-solid fa-arrow-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="flex flex-col w-full">
+                  <img src="./assets/akSec3.png" alt class="akImg">
+                  <div class="py-4 bg-white rounded-[20px] akSecond-item">
+                    <div class="flex flex-col gap-3">
+                      <h4 class="akHelp-title">Risk assessment</h4>
+                      <p class="text-sm font-medium md:text-base text-[#5B5B5B]">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur sit amet eros blandit, hendrerit elit et, </p>
+                      <a href="#!"
+                        class="flex items-center gap-2 akHelp-link w-fit">Learn
+                        More
+                        <span class=" text-[18px] font-normal"><i
+                            class="fa-solid fa-arrow-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-12 akFearues bg-[#EDF7FF]">
+          <div class="container">
+            <!-- Top Row -->
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <div class>
+                  <h3
+                    class="text-xl font-semibold text-[#0D1317] md:text-4xl flex flex-col">We
+                    are building software solution <span>that solves your
+                      business</span> challenges</h3>
+                </div>
+              </div>
+              <div class="mt-5 col-lg-6 col-12 mt-lg-0">
+                <p
+                  class="flex flex-col md:text-[18px] text-sm font-medium text-[#1D3444]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur sit <span>
+                    amet eros blandit, hendrerit elit et, mattis purus. Vivamus
+                    commodo
+                  </span> suscipit tellus et pellentesque.
+                </p>
+              </div>
+            </div>
+            <!-- Row items -->
+            <div class="mt-14 row">
+              <div class="col-lg-4 col-12">
+                <div
+                  class="w-full h-80 px-12  rounded-lg shadow-xl shadow-designColor flex items-center bg-white
+                  group hover:bg-gradient-to-b hover:from-black hover:to-[#1e2024] transition-colors duration-100">
+                  <div class="overflow-y-hidden h-72">
+                    <div
+                      class="flex flex-col h-full gap-8 transition-transform duration-500 translate-y-20 group-hover:translate-y-0">
+                      <span clas=" group-hover:text-blue-600">
+                        <svg class xmlns="http://www.w3.org/2000/svg" width="33"
+                          height="34" viewBox="0 0 33 34" fill="#F58A07">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.2455 0.302095C16.0352 -0.100698 16.9648 -0.100698 17.7545 0.302094L31.4493 7.28692C33.5169 8.34144 33.5169 11.3512 31.4493 12.4057L29.4544 13.4232L31.4493 14.4406C33.5169 15.4951 33.5169 18.5049 31.4493 19.5594L29.4544 20.5769L31.4493 21.5943C33.5169 22.6488 33.5169 25.6586 31.4493 26.7131L17.7545 33.6979C16.9648 34.1007 16.0352 34.1007 15.2455 33.6979L1.55067 26.7131C-0.51689 25.6586 -0.516887 22.6488 1.55067 21.5943L3.54556 20.5769L1.55067 19.5594C-0.51689 18.5049 -0.516887 15.4951 1.55067 14.4406L3.54556 13.4232L1.55067 12.4057C-0.516892 11.3512 -0.516887 8.34144 1.55067 7.28692L15.2455 0.302095ZM7.3238 12.1509C7.3147 12.1462 7.30555 12.1415 7.29635 12.137L2.80518 9.8463L16.5 2.86148L30.1948 9.8463L25.7034 12.1371C25.6944 12.1416 25.6854 12.1461 25.6764 12.1508L16.5 16.8311L7.3238 12.1509ZM6.68185 15.0228L2.80518 17L7.29618 19.2906L7.32397 19.3047L16.5 23.9848L25.6764 19.3046L25.7035 19.2907L30.1948 17L26.3181 15.0228L17.7545 19.3905C16.9648 19.7933 16.0352 19.7933 15.2455 19.3905L6.68185 15.0228ZM2.80518 24.1537L6.68185 22.1765L15.2455 26.5442C16.0352 26.947 16.9648 26.947 17.7545 26.5442L26.3181 22.1765L30.1948 24.1537L16.5 31.1385L2.80518 24.1537Z"
+                            fill="#F58A07" />
+                        </svg>
+                      </span>
+                      <h4
+                        class="text-sm font-semibold md:text-2xl text-gbText group-hover:text-designColor ">Invoicing</h4>
+                      <p
+                        class="text-xs font-medium text-smColor group-hover:text-designColor md:text-base">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur sit amet eros blandit, hendrerit elit et, </p>
+                      <span class="text-2xl text-designColor"><i
+                          class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 col-lg-4 col-12 mt-lg-0">
+                <div
+                  class="w-full h-80 px-12  rounded-lg shadow-xl shadow-designColor flex items-center bg-white
+                group hover:bg-gradient-to-b hover:from-black hover:to-[#1e2024] transition-colors duration-100">
+                  <div class="overflow-y-hidden h-72">
+                    <div
+                      class="flex flex-col h-full gap-8 transition-transform duration-500 translate-y-20 group-hover:translate-y-0">
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41"
+                          height="42" viewBox="0 0 41 42" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M24.8856 1.78073C24.8856 0.797262 24.0946 0 23.1189 0C22.1432 0 21.3522 0.797262 21.3522 1.78073V2.6711H20.4688C19.4931 2.6711 18.7021 3.46836 18.7021 4.45183C18.7021 5.43531 19.4931 6.23257 20.4688 6.23257H21.3522V7.12293C21.3522 8.10641 22.1432 8.90367 23.1189 8.90367C24.0946 8.90367 24.8856 8.10641 24.8856 7.12293V6.23257H25.769C26.7447 6.23257 27.5357 5.43531 27.5357 4.45183C27.5357 3.46836 26.7447 2.6711 25.769 2.6711H24.8856V1.78073ZM21.7135 17.8073C20.3336 16.4165 18.0964 16.4165 16.7165 17.8073L13.036 21.517L1.03492 33.6133C-0.344973 35.0042 -0.344973 37.2592 1.03492 38.65L3.32364 40.9569C4.70353 42.3477 6.94078 42.3477 8.32067 40.9569L20.3218 28.8605L24.0022 25.1509C25.3821 23.76 25.3821 21.5051 24.0022 20.1142L21.7135 17.8073ZM19.0725 25.083L16.7838 22.7762L19.215 20.3257L21.5037 22.6325L19.0725 25.083ZM14.2853 25.2945L16.574 27.6014L5.82215 38.4385L3.53343 36.1317L14.2853 25.2945ZM32.8358 26.711C33.8116 26.711 34.6026 27.5083 34.6026 28.4917C35.5783 28.4917 36.3693 29.289 36.3693 30.2725C36.3693 31.2559 35.5783 32.0532 34.6026 32.0532C34.6026 33.0367 33.8116 33.8339 32.8358 33.8339C31.8601 33.8339 31.0691 33.0367 31.0691 32.0532C30.0934 32.0532 29.3024 31.2559 29.3024 30.2725C29.3024 29.289 30.0934 28.4917 31.0691 28.4917C31.0691 27.5083 31.8601 26.711 32.8358 26.711ZM36.2176 8.01317C35.5276 7.31775 34.409 7.31775 33.7191 8.01317C33.0291 8.70859 33.0291 9.83608 33.7191 10.5315L34.6023 11.4217L33.7191 12.312C33.0291 13.0074 33.0291 14.1349 33.7191 14.8303C34.409 15.5257 35.5276 15.5257 36.2176 14.8303L37.1008 13.9401L37.984 14.8303C38.674 15.5257 39.7926 15.5257 40.4825 14.8303C41.1725 14.1349 41.1725 13.0074 40.4825 12.312L39.5993 11.4217L40.4825 10.5315C41.1725 9.83608 41.1725 8.70859 40.4825 8.01317C39.7926 7.31775 38.674 7.31775 37.984 8.01317L37.1008 8.9034L36.2176 8.01317Z"
+                            fill="#F58A07" />
+                        </svg>
+                      </span>
+                      <h4
+                        class="text-sm font-semibold md:text-2xl text-gbText group-hover:text-designColor ">Support</h4>
+                      <p
+                        class="text-xs font-medium text-smColor group-hover:text-designColor md:text-base">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur sit amet eros blandit, hendrerit elit et, </p>
+                      <span class="text-2xl text-designColor"><i
+                          class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 col-lg-4 col-12 mt-lg-0">
+                <div
+                  class="w-full h-80 px-12  rounded-lg shadow-xl shadow-designColor flex items-center bg-white
+              group hover:bg-gradient-to-b hover:from-black hover:to-[#1e2024] transition-colors duration-100">
+                  <div class="overflow-y-hidden h-72">
+                    <div
+                      class="flex flex-col h-full gap-8 transition-transform duration-500 translate-y-20 group-hover:translate-y-0">
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38"
+                          height="34" viewBox="0 0 38 34" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M31.2678 5.26873C34.4609 7.62616 34.9122 12.0463 32.2556 14.9421L19.0001 29.3913L5.74477 14.9437C3.08767 12.0476 3.53898 7.62685 6.73245 5.26912C10.0009 2.85606 14.7458 3.62579 16.9849 6.93227L17.736 8.04154C18.1857 8.70564 19.1174 8.89789 19.8169 8.47094C20.036 8.3372 20.2063 8.15857 20.3231 7.95588L21.0156 6.93282C23.2541 3.6258 27.9993 2.85557 31.2678 5.26873ZM19.0004 4.69063C15.6348 0.566015 9.31051 -0.256068 4.88378 3.01218C0.325463 6.37758 -0.318738 12.6877 3.47398 16.8215L17.8672 32.5094C18.4134 33.1047 19.3645 33.167 19.9916 32.6484C20.0731 32.581 20.1451 32.5071 20.2075 32.4283L34.5265 16.8199C38.3186 12.6863 37.6744 6.37686 33.1165 3.01179C28.6898 -0.256443 22.3655 0.565939 19.0004 4.69063Z"
+                            fill="#F58A07" stroke="#F58A07" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <h4
+                        class="text-sm font-semibold md:text-2xl text-gbText group-hover:text-designColor ">Surveying</h4>
+                      <p
+                        class="text-xs font-medium text-smColor group-hover:text-designColor md:text-base">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur sit amet eros blandit, hendrerit elit et, </p>
+                      <span class="text-2xl text-designColor"><i
+                          class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-12 akAbout ">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <div class="flex flex-col gap-3 pt-12">
+                  <h2
+                    class="flex flex-col text-xl font-semibold leading-8 tracking-wide md:text-5xl text-gbText">The
+                    energy of a start-up combined with 30 years <span>of
+                      experience.</span></h2>
+                  <p
+                    class="flex flex-col  text-smColor md:text-[18px] text-xs font-medium leading-7">Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit. <span>Curabitur
+                      sit amet eros blandit, hendrerit elit et, mattis</span>
+                    <span>purus. Vivamus commodo suscipit tellus et</span>
+                    pellentesque.</p>
+                  <div class="flex flex-wrap mt-5 gap-14">
+                    <div class="flex flex-col gap-3">
+                      <h2
+                        class="text-xl md:text-4xl text-designColor font-inter">15+</h2>
+                      <h3
+                        class="text-base font-semibold md:text-2xl text-gbText">Awards
+                        received</h3>
+                      <p
+                        class="flex flex-col text-xs font-medium text-smColor md:text-base">Lorem
+                        ipsum dolor sit amet, <span>consectetur adipiscin.
+                          Curabitur</span> sit amet eros elit et.</p>
+
+                    </div>
+                    <div class="flex flex-col gap-3">
+                      <h2
+                        class="text-xl md:text-4xl text-designColor font-inter">500+</h2>
+                      <h3
+                        class="text-base font-semibold md:text-2xl text-gbText">Clients
+                        served</h3>
+                      <p
+                        class="flex flex-col text-xs font-medium text-smColor md:text-base">Lorem
+                        ipsum dolor sit amet, <span>consectetur adipiscin.
+                          Curabitur</span> sit amet eros elit et.</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5 col-lg-6 col-12 mt-lg-0">
+                <div class="relative akAbout-post">
+                  <div class="akAbout-circle">
+                    <img src="./assets/Circle.png" alt="Circle">
+                  </div>
+                </div>
+                <div class="akAbout-right rounded-2xl">
+
+                  <div class="w-40 h-[560px] bg-orange-400"></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-12 akServis">
+          <div class="container">
+            <div class="w-full h-full p-12 bg-[#EDF7FF] rounded-md relative">
+              <div class="flex flex-wrap gap-6">
+                <button class="akServisBtn">Business strategy</button>
+                <button class="akServisBtn">Digitalization</button>
+                <button class="akServisBtn">Risk assessment</button>
+              </div>
+              <div class="mt-20 row">
+                <div class="col-lg-6 col-12">
+                  <div class="flex flex-col gap-5">
+                    <h2
+                      class="flex flex-col text-xl font-semibold leading-[56px] md:text-5xl text-gbText">Helping
+                      clients with <span>research and strategy</span> for their
+                      business</h2>
+                    <p class="flex flex-col gap-4 text-xs md:text-xl">
+                      <span class="flex flex-col">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <span>Curabitur sit amet eros blandit, hendrerit elit
+                          et, mattis</span>
+                        purus. Vivamus commodo suscipit tellus et pellentesque.
+                      </span>
+
+                      <span class="flex flex-col">
+                        Mattis purus. Vivamus commodo suscipit tellus et <span>
+                          pellent.
+                          Curabitur sit amet eros blan esque.
+                        </span>
+                      </span>
+                    </p>
+                    <a href="#!"
+                      class="flex items-center gap-2 akHelp-link w-fit">See all
+                      services
+                      <span class=" text-[18px] font-normal"><i
+                          class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <div class="flex justify-end w-full">
+                    <div class="rounded-2xl akServis__right ">
+
+                      <div class="w-[120px] h-[466px] bg-orange-400"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute -right-4 -top-4">
+                <img src="./assets/akServisPos.png" alt>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="akCta">
+          <div class="flex flex-wrap">
+            <div class="col-xl-6 col-12">
+              <img src="./assets/akCkImg.png" alt class="w-full h-full img-fluid">
+            </div>
+            <div class="col-xl-6 col-12">
+              <div class="flex flex-col justify-center w-full h-full gap-10 p-32 bg-designColor">
+                <h3
+                  class="flex flex-col gap-2 text-xl font-semibold text-white md:text-5xl">Energy
+                  of a start-up <span>combined with 30</span> <span>years of
+                    experience.</span></h3>
+                    <div class="">
+                        <button class="px-10 py-3 text-sm bg-white md:text-2xl text-designColor rounded-3xl">See Job Vacancies</button>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-32 akVideo">
+          <div class="container">
+            <div class="items-center row">
+              <div class="col-lg-6 col-12">
+                  <div class="flex flex-col gap-5">
+                      <h2 class="flex flex-col text-xl font-semibold tracking-wide capitalize md:text-3xl lg:text-5xl">Finsweet was a dream <span>to work with</span></h2>
+                      <p class="flex flex-col md:text-[18px] text-sm text-gbText leading-7">Maecenas efficitur scelerisque lorem, et varius lacus <span>tincidunt vel. Pellentesque a arcu vitae diam dapibus mattis</span> vel vel orci. Vivamus eleifend nec felis vel auctor.</p>
+                      <div class="flex items-center gap-6">
+                        <img src="./assets/akVideoImg.png" alt="">
+                        <div class="flex flex-col gap-1">
+                            <h4 class="text-sm font-bold md:text-2xl  text-[#063255]">Chikelu Neo</h4>
+                            <p class="md:text-[18px] text-xs font-medium text-designColor">CEO at MazeAI</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="mt-5 col-lg-6 col-12 mt-lg-0">
+                  <div class="w-full akVideo__right">
+                      <div class="flex items-end h-full">
+                       <div class="flex items-center gap-4">
+                        <div class="rounded-[50%] bg-white py-4 px-6 flex justify-center items-center cursor-pointer">
+                          <i class="text-base text-designColor fa-solid fa-play"></i>
+                        </div>
+                        <p class="font-semibold font-inter text-sm  md:text-[18px] leading-3 text-white">Play Video</p>
+                       </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-12 akLatest bg-[#DCEAF5]">
+          <div class="container">
+            <div class="col-lg-6">
+              <h2 class="mb-5 text-2xl font-semibold md:text-5xl">Latest Blog & News</h2>
              
-                  <img src="./assets/akSec1.png" alt="" class="akImg" >
-                      <div class="py-4 ">
-                          <div class="flex flex-col gap-2">
-                            <h4 class="akHelp-title">Business strategy</h4>
-                            <p class="text-sm font-medium md:text-base text-[#5B5B5B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
-                            <a href="#!" class="flex items-center gap-2 akHelp-link w-fit">Learn More
-                              <span class=" text-[18px] font-normal"><i class="fa-solid fa-arrow-right"></i></span>
-                            </a>
-                          </div>
-                      </div>
-                        
-                </div>
-              </div>
+            </div>
+            <div class="mt-5 row">
               <div class="col-lg-4">
-                <div class="flex flex-col w-full">
-                  <img src="./assets/akSec2.png" alt="" class="akImg">
-                      <div class="py-4 bg-white rounded-[20px] akSecond-item">
-                          <div class="flex flex-col gap-2">
-                            <h4 class="akHelp-title">Digitalization</h4>
-                            <p class="text-sm font-medium md:text-base text-[#5B5B5B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
-                            <a href="#!" class="flex items-center gap-2 akHelp-link w-fit">Learn More
-                              <span class=" text-[18px] font-normal"><i class="fa-solid fa-arrow-right"></i></span>
-                            </a>
-                          </div>
-                      </div>
-                        
+
+                <div class="flex flex-col w-full bg-white rounded-[24px] akLatest-item ">
+                    <img src="./assets/akLatestImg1.png" alt="" class="img-fluid ">
+                  
+                  <div class="py-4 ps-4">
+                    <div class="flex flex-col gap-2">
+                      <h4 class="flex flex-col akHelp-title">Why you have to digitalize in <span> 2021</span></h4>
+                      <p class="text-sm font-medium md:text-base text-[#5B5B5B]">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur sit amet eros blandit, hendrerit elit et, </p>
+                      <a href="#!"
+                        class="flex items-center gap-2 akHelp-link w-fit">Learn
+                        More
+                        <span class=" text-[18px] font-normal"><i
+                            class="fa-solid fa-arrow-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div class="flex flex-col w-full">
-                  <img src="./assets/akSec3.png" alt="" class="akImg">
-                      <div class="py-4 bg-white rounded-[20px] akSecond-item">
-                          <div class="flex flex-col gap-3">
-                            <h4 class="akHelp-title">Risk assessment</h4>
-                            <p class="text-sm font-medium md:text-base text-[#5B5B5B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
-                            <a href="#!" class="flex items-center gap-2 akHelp-link w-fit">Learn More
-                              <span class=" text-[18px] font-normal"><i class="fa-solid fa-arrow-right"></i></span>
-                            </a>
-                          </div>
-                      </div>
-                        
+              <div class="mt-3 col-lg-4 mt-lg-0">
+
+                <div class="flex flex-col w-full bg-white rounded-[24px] akLatest-item ">
+                    <img src="./assets/akLatestImg2.png" alt="" class="img-fluid ">
+                  
+                  <div class="py-4 ps-4">
+                    <div class="flex flex-col gap-2">
+                      <h4 class="flex flex-col akHelp-title">Our internal process and <span>longerm vision</span></h4>
+                      <p class="text-sm font-medium md:text-base text-[#5B5B5B]">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur sit amet eros blandit, hendrerit elit et, </p>
+                      <a href="#!"
+                        class="flex items-center gap-2 akHelp-link w-fit">Learn
+                        More
+                        <span class=" text-[18px] font-normal"><i
+                            class="fa-solid fa-arrow-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+
                 </div>
-                
               </div>
+              <div class="mt-3 col-lg-4 mt-lg-0">
+
+                <div class="flex flex-col w-full bg-white rounded-[24px] akLatest-item ">
+                    <img src="./assets/akLatestImg3.png" alt="" class="img-fluid ">
+                  
+                  <div class="py-4 ps-4">
+                    <div class="flex flex-col gap-2">
+                      <h4 class="flex flex-col akHelp-title">Helping the next generation <span> of leaders</span></h4>
+                      <p class="text-sm font-medium md:text-base text-[#5B5B5B]">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur sit amet eros blandit, hendrerit elit et, </p>
+                      <a href="#!"
+                        class="flex items-center gap-2 akHelp-link w-fit">Learn
+                        More
+                        <span class=" text-[18px] font-normal"><i
+                            class="fa-solid fa-arrow-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+          
             </div>
           </div>
         </section>
@@ -315,78 +685,82 @@
 
           </div>
         </div>
-        <div class="container">
+        <div class="container footer-content">
           <div class="row">
-            <div class="col-lg-3 col-12">
-              <div class="flex flex-col gap-3">
-                <a href="./home.html" class>
-                  <img src="./assets/footLogo.png" alt class="img-fluid">
-                </a>
-                <h3
-                  class="flex flex-col font-semibold text-xl md:text-4xl leading-[44px] text-white">Bespoke
-                  software <span>solutions</span></h3>
-                <div class="flex items-center h-full gap-3 py-2">
-                  <a class="cursor-pointer" href="#!">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22"
-                      height="20"
-                      viewBox="0 0 22 20" fill="none">
-                      <path
-                        d="M16.0068 1.66675H13.339C12.1597 1.66675 11.0287 2.10573 10.1948 2.88714C9.36096 3.66854 8.89249 4.72835 8.89249 5.83342V8.33342H6.22461V11.6667H8.89249V18.3334H12.4497V11.6667H15.1176L16.0068 8.33342H12.4497V5.83342C12.4497 5.6124 12.5434 5.40044 12.7101 5.24416C12.8769 5.08788 13.1031 5.00008 13.339 5.00008H16.0068V1.66675Z"
-                        fill="white" />
-                    </svg>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="flex justify-between footer-item ">
+                <div class="flex flex-col gap-3">
+                  <a href="./home.html" class>
+                    <img src="./assets/footLogo.png" alt class="img-fluid">
                   </a>
-                  <a class="cursor-pointer" href="#!">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22"
-                      height="20"
-                      viewBox="0 0 22 20" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M19.6396 4.29942C19.9425 4.59206 20.1577 4.95443 20.2633 5.34992C20.5454 6.8155 20.6824 8.30238 20.6724 9.79158C20.678 11.2585 20.5411 12.7229 20.2633 14.1666C20.1577 14.5621 19.9425 14.9244 19.6396 15.2171C19.3367 15.5097 18.9567 15.7223 18.5381 15.8333C17.0085 16.2166 10.8902 16.2166 10.8902 16.2166C10.8902 16.2166 4.77182 16.2166 3.24224 15.8333C2.83211 15.7281 2.45786 15.5256 2.15565 15.2453C1.85343 14.965 1.63347 14.6165 1.51701 14.2333C1.23489 12.7677 1.09795 11.2808 1.10793 9.79158C1.10014 8.31351 1.23707 6.83788 1.51701 5.38325C1.62264 4.98776 1.83779 4.6254 2.14071 4.33276C2.44363 4.04012 2.8236 3.82757 3.24224 3.71659C4.77182 3.33325 10.8902 3.33325 10.8902 3.33325C10.8902 3.33325 17.0085 3.33325 18.5381 3.68325C18.9567 3.79424 19.3367 4.00679 19.6396 4.29942ZM14.0031 9.79161L8.88962 12.5166V7.06661L14.0031 9.79161Z"
-                        fill="white" />
-                    </svg>
-                  </a>
-                  <a class="cursor-pointer" href="#!">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22"
-                      height="20"
-                      viewBox="0 0 22 20" fill="none">
-                      <g clip-path="url(#clip0_1_1019)">
+                  <h3
+                    class="flex flex-col text-base font-semibold text-white md:text-4xl">Bespoke
+                    software <span>solutions</span></h3>
+                  <div class="flex items-center h-full gap-3 py-2">
+                    <a class="cursor-pointer" href="#!">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                        height="20"
+                        viewBox="0 0 22 20" fill="none">
                         <path
-                          d="M15.5562 1.66675H6.66327C4.20755 1.66675 2.2168 3.53223 2.2168 5.83342V14.1667C2.2168 16.4679 4.20755 18.3334 6.66327 18.3334H15.5562C18.0119 18.3334 20.0027 16.4679 20.0027 14.1667V5.83342C20.0027 3.53223 18.0119 1.66675 15.5562 1.66675Z"
-                          stroke="white" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round" />
+                          d="M16.0068 1.66675H13.339C12.1597 1.66675 11.0287 2.10573 10.1948 2.88714C9.36096 3.66854 8.89249 4.72835 8.89249 5.83342V8.33342H6.22461V11.6667H8.89249V18.3334H12.4497V11.6667H15.1176L16.0068 8.33342H12.4497V5.83342C12.4497 5.6124 12.5434 5.40044 12.7101 5.24416C12.8769 5.08788 13.1031 5.00008 13.339 5.00008H16.0068V1.66675Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                    <a class="cursor-pointer" href="#!">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                        height="20"
+                        viewBox="0 0 22 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M19.6396 4.29942C19.9425 4.59206 20.1577 4.95443 20.2633 5.34992C20.5454 6.8155 20.6824 8.30238 20.6724 9.79158C20.678 11.2585 20.5411 12.7229 20.2633 14.1666C20.1577 14.5621 19.9425 14.9244 19.6396 15.2171C19.3367 15.5097 18.9567 15.7223 18.5381 15.8333C17.0085 16.2166 10.8902 16.2166 10.8902 16.2166C10.8902 16.2166 4.77182 16.2166 3.24224 15.8333C2.83211 15.7281 2.45786 15.5256 2.15565 15.2453C1.85343 14.965 1.63347 14.6165 1.51701 14.2333C1.23489 12.7677 1.09795 11.2808 1.10793 9.79158C1.10014 8.31351 1.23707 6.83788 1.51701 5.38325C1.62264 4.98776 1.83779 4.6254 2.14071 4.33276C2.44363 4.04012 2.8236 3.82757 3.24224 3.71659C4.77182 3.33325 10.8902 3.33325 10.8902 3.33325C10.8902 3.33325 17.0085 3.33325 18.5381 3.68325C18.9567 3.79424 19.3367 4.00679 19.6396 4.29942ZM14.0031 9.79161L8.88962 12.5166V7.06661L14.0031 9.79161Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                    <a class="cursor-pointer" href="#!">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                        height="20"
+                        viewBox="0 0 22 20" fill="none">
+                        <g clip-path="url(#clip0_1_1019)">
+                          <path
+                            d="M15.5562 1.66675H6.66327C4.20755 1.66675 2.2168 3.53223 2.2168 5.83342V14.1667C2.2168 16.4679 4.20755 18.3334 6.66327 18.3334H15.5562C18.0119 18.3334 20.0027 16.4679 20.0027 14.1667V5.83342C20.0027 3.53223 18.0119 1.66675 15.5562 1.66675Z"
+                            stroke="white" stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path
+                            d="M14.6667 9.47501C14.7765 10.1685 14.65 10.8769 14.3054 11.4992C13.9608 12.1215 13.4156 12.6262 12.7473 12.9414C12.079 13.2566 11.3216 13.3663 10.5829 13.2549C9.84417 13.1436 9.16176 12.8167 8.6327 12.321C8.10364 11.8252 7.75487 11.1857 7.636 10.4935C7.51713 9.8013 7.63422 9.09158 7.97061 8.46532C8.30699 7.83905 8.84555 7.32812 9.50967 7.00521C10.1738 6.68229 10.9297 6.56383 11.6698 6.66667C12.4247 6.77158 13.1236 7.10123 13.6633 7.60693C14.203 8.11263 14.5548 8.76757 14.6667 9.47501Z"
+                            stroke="white" stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M16.001 5.41675H16.0106" stroke="white"
+                            stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clippath id="clip0_1_1019">
+                            <rect width="21.3431" height="20" fill="white"
+                              transform="translate(0.438477)" />
+                          </clippath>
+                        </defs>
+                      </svg>
+                    </a>
+                    <a class="cursor-pointer" href="#!">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                        height="20"
+                        viewBox="0 0 22 20" fill="none">
                         <path
-                          d="M14.6667 9.47501C14.7765 10.1685 14.65 10.8769 14.3054 11.4992C13.9608 12.1215 13.4156 12.6262 12.7473 12.9414C12.079 13.2566 11.3216 13.3663 10.5829 13.2549C9.84417 13.1436 9.16176 12.8167 8.6327 12.321C8.10364 11.8252 7.75487 11.1857 7.636 10.4935C7.51713 9.8013 7.63422 9.09158 7.97061 8.46532C8.30699 7.83905 8.84555 7.32812 9.50967 7.00521C10.1738 6.68229 10.9297 6.56383 11.6698 6.66667C12.4247 6.77158 13.1236 7.10123 13.6633 7.60693C14.203 8.11263 14.5548 8.76757 14.6667 9.47501Z"
-                          stroke="white" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <path d="M16.001 5.41675H16.0106" stroke="white"
-                          stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </g>
-                      <defs>
-                        <clippath id="clip0_1_1019">
-                          <rect width="21.3431" height="20" fill="white"
-                            transform="translate(0.438477)" />
-                        </clippath>
-                      </defs>
-                    </svg>
-                  </a>
-                  <a class="cursor-pointer" href="#!">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22"
-                      height="20"
-                      viewBox="0 0 22 20" fill="none">
-                      <path
-                        d="M21.1114 2.50008C20.2598 3.06298 19.3169 3.4935 18.319 3.77508C17.7834 3.198 17.0716 2.78899 16.2798 2.60335C15.4881 2.41771 14.6546 2.46441 13.8921 2.73712C13.1296 3.00984 12.4749 3.49541 12.0165 4.12818C11.5581 4.76094 11.3182 5.51036 11.3291 6.27508V7.10841C9.7663 7.14639 8.21772 6.82159 6.82129 6.16295C5.42486 5.50431 4.22393 4.53228 3.32546 3.33341C3.32546 3.33341 -0.231714 10.8334 7.77194 14.1667C5.94046 15.3317 3.75869 15.9159 1.54688 15.8334C9.55052 20.0001 19.3328 15.8334 19.3328 6.25008C19.3319 6.01796 19.3081 5.78641 19.2616 5.55841C20.1692 4.71966 20.8097 3.66067 21.1114 2.50008Z"
-                        fill="white" />
-                    </svg>
-                  </a>
+                          d="M21.1114 2.50008C20.2598 3.06298 19.3169 3.4935 18.319 3.77508C17.7834 3.198 17.0716 2.78899 16.2798 2.60335C15.4881 2.41771 14.6546 2.46441 13.8921 2.73712C13.1296 3.00984 12.4749 3.49541 12.0165 4.12818C11.5581 4.76094 11.3182 5.51036 11.3291 6.27508V7.10841C9.7663 7.14639 8.21772 6.82159 6.82129 6.16295C5.42486 5.50431 4.22393 4.53228 3.32546 3.33341C3.32546 3.33341 -0.231714 10.8334 7.77194 14.1667C5.94046 15.3317 3.75869 15.9159 1.54688 15.8334C9.55052 20.0001 19.3328 15.8334 19.3328 6.25008C19.3319 6.01796 19.3081 5.78641 19.2616 5.55841C20.1692 4.71966 20.8097 3.66067 21.1114 2.50008Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </div>
+
                 </div>
-                <p class="mt-10 text-sm font-medium text-white md:text-base">©
-                  All
-                  rights reserved – Finsweet</p>
+
               </div>
             </div>
-            <div class="col-lg-3 col-12">
-              <div class>
-                <h5 class="mb-3 text-xl font-semibold text-white">Company</h5>
+            <div
+              class="flex justify-normal lg:justify-center col-lg-3 col-md-6 col-12">
+              <div class="footer-item">
+                <h5 class="mb-3 text-sm font-semibold text-white md:text-xl">Company</h5>
                 <ul class="flex flex-col gap-1">
                   <li><a href="./about.html" class="footer-link">About Us</a></li>
                   <li><a href="./carrer-inner.html" class="footer-link">Careers</a></li>
@@ -395,9 +769,10 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-12">
-              <div class>
-                <h5 class="mb-3 text-xl font-semibold text-white">Company</h5>
+            <div class=" col-lg-3 col-md-6 col-12">
+
+              <div class="footer-item">
+                <h5 class="mb-3 text-sm font-semibold text-white md:text-xl">Connect</h5>
                 <ul class="flex flex-col gap-1">
                   <li><a href="email:hi@finsweet.com" class="footer-link">hi@finsweet.com</a></li>
                   <li><a href="tel:+(123) 456-7890" class="footer-link">+(123)
@@ -405,29 +780,47 @@
 
                 </ul>
               </div>
+
             </div>
-            <div class="col-lg-3 col-12">
-              <div class>
-                <h5 class="mb-3 text-xl font-semibold text-white">Company</h5>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="footer-item">
+                <h5 class="mb-3 text-sm font-semibold text-white md:text-xl">Join
+                  Newsletter</h5>
                 <div class="flex flex-col gap-2">
-                  <input type="text"
-                    class="px-6 py-3 border-none outline-none footer-input rounded-2xl"
-                    placeholder="Type email here">
-                  <button class="w-1/2 button">Subscribe</button>
+                  <div class>
+                    <input type="text"
+                      class="px-4 py-3 text-xs border-none outline-none lg:px-6 md:text-xl footer-input rounded-2xl"
+                      placeholder="Type email here">
+                  </div>
+                  <div class="mt-3">
+                    <button class="button">Subscribe</button>
+                  </div>
                 </div>
 
-                <ul class="flex gap-2 mt-14">
-                  <li><a href="./policy.html" class="footer-link">Privacy Policy</a></li>
-                  <li><a href="#!" class="footer-link">Terms & Conditions</a></li>
-                </ul>
               </div>
             </div>
+          </div>
+          <div class="flex items-center justify-between footer-bottom mt-14">
+            <div class>
+              <p class="text-xs font-medium text-white md:text-base">©
+                All
+                rights reserved – Finsweet</p>
+            </div>
+
+            <ul class="flex gap-2 mt-3 lg:mt-0">
+              <li><a href="./policy.html" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#!" class="footer-link">Terms & Conditions</a></li>
+            </ul>
+
           </div>
         </div>
       </footer>
 
       <!-- Footer end here -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
