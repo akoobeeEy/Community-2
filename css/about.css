@@ -25,24 +25,27 @@
   border-radius: 20px;
   background-size: cover;
 }
+
 .akAb__aboutRight__item{
   position: absolute;
   right: -20px;
   bottom: -32px;
   mix-blend-mode: multiply;
 }
-.akTeam__item:nth-last-child(1){
+/* .akTeam__item:nth-last-child(1){
   background-image: url(../assets/akTeamImg4.png);
   background-repeat: no-repeat;
   height: 100%;
   overflow: hidden;
-}
+} */
 .akTeam__rightItem{
-  mix-blend-mode: multiply;
+  
   border-radius: 10px 10px;
-
+  background-color: rgba(37, 37, 37, 0.898);
 
 }
+
+
 @media(max-width:972px){
   .akAb__featuresItem{
     margin-top: 20px;
