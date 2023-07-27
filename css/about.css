@@ -2,3 +2,79 @@
   line-height: 72px;
   letter-spacing: -1.92px;
 }
+.akAb__headerRight{
+  background-image: url(../assets/akAbHeaderIMG.png);
+  background-repeat: no-repeat;
+  height: 650px;
+  background-size: cover;
+  overflow: hidden;
+}
+.akAb__headerItem{
+  mix-blend-mode: multiply;
+}
+
+.akAb__cicrle{
+  position: absolute;
+  right: -60px;
+  bottom: -50px;
+}
+.akAb__aboutRight{
+  background-image: url(../assets/akAbAboutImg.png);
+  background-repeat: no-repeat;
+  height: 650px;
+  border-radius: 20px;
+  background-size: cover;
+}
+.akAb__aboutRight__item{
+  position: absolute;
+  right: -20px;
+  bottom: -32px;
+  mix-blend-mode: multiply;
+}
+.akTeam__item:nth-last-child(1){
+  background-image: url(../assets/akTeamImg4.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+}
+.akTeam__rightItem{
+  mix-blend-mode: multiply;
+  border-radius: 10px 10px;
+
+
+}
+@media(max-width:972px){
+  .akAb__featuresItem{
+    margin-top: 20px;
+  }
+  .akTeam__item{
+    margin-top: 20px;
+ 
+  }
+}
+@media(max-width: 768px){
+  .akAb__cicrle {
+    right: -20px;
+    bottom: -30px;
+  }
+}
+
+@media(max-width: 666px){
+  .akAb__aboutRight__item{
+    right: 0;
+    bottom: 0;
+    height: 50%;
+  }
+  .akAb__cicrle {
+    right: 0;
+    bottom: 0px;
+  }
+  .akAb__headerRight{
+    height: 400px;
+  }
+  .akAb__aboutRight{
+    background-position: center;
+    height: 400px;
+    overflow: hidden;
+  }
+}
